@@ -19,10 +19,8 @@ export const initialState = {
   };
 
 export const rootReducer = (state = initialState, action) => {
-    console.log(action.type);
     switch(action.type){
         case ADD_FEATURE :
-                console.log("ADD_FEATURE inside reducer");
           return {
             ...state,
 
